@@ -6,30 +6,30 @@ body{
 .game td
 {
     width:100px;
-    height:100px;
-    border: solid 5px black;
+    height:150px;
+    border: solid 5px red;
     text-align:center;
     font-size:40pt;
-    border-radius:10px;
+    border-radius:20px;
     box-sizing:border-box;
 }
 
 .game td:hover
 {
-    background-color: #fff;
-    cursor:pointer;
+    background-color :whitesmoke;
+    cursor: crosshair;
 }
 
 .game
 {
-    background:#efefef;
-    border:solid 10px #333;
+    background: cyan;
+    border:solid 10px black;
 }
 
 .game .game-title
 {
-    background:#222;
-    color:#fff;
+    background: black;
+    color:red;
     padding: 10px;
     text-align:center;
 }
@@ -43,7 +43,8 @@ body{
 
 .game .player .selected
 {
-    border-bottom:solid 4px #00fa9a;
+    border-top:solid 4px red;
+    /* border:solid 4px red */
 }
 
 .tictactoe-board

@@ -8,6 +8,7 @@ var move = 0;
 var points1 = 0;    // player 1 points
 var points2 = 0;    // player 2 points
 var size = 3;
+var n=0;
 
 function drawBoard() {
     var Parent = document.getElementById("game");
@@ -43,10 +44,12 @@ function drawBoard() {
 
                 if (checkWinner())
                 {
-                    if(currentPlayer == 0)
-                        points1++;
-                    else
-                        points2++;
+                    if(currentPlayer == 0){
+                        alert("player 1 wins");
+                        points1++;}
+                    else{
+                        alert("player 2 wins");
+                        points2++;}
 
                     document.getElementById("player1").innerHTML = points1;
                     document.getElementById("player2").innerHTML = points2;
